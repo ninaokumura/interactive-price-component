@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slider-thumb::-webkit-slider-thumb {
+  @apply appearance-none w-9 h-9 rounded-full bg-strong-cyan cursor-pointer bg-sliderIcon bg-no-repeat bg-center;
+}
+.slider-thumb::-webkit-slider-thumb:hover {
+  @apply bg-blue-700;
+}

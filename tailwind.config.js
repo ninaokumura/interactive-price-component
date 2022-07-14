@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         circles: "url('./assets/images/pattern-circles.svg')",
+        sliderIcon: "url('./assets/images/icon-slider.svg')",
       },
       fontFamily: {
         sans: ["Manrope", "sans-serif"],
