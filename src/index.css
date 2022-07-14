@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 .slider-thumb::-webkit-slider-thumb {
-  @apply appearance-none w-9 h-9 rounded-full bg-strong-cyan cursor-pointer bg-sliderIcon bg-no-repeat bg-center;
+  @apply appearance-none w-9 h-9 rounded-full bg-strong-cyan cursor-pointer bg-sliderIcon bg-no-repeat bg-center transition-all opacity-90;
 }
+
 .slider-thumb::-webkit-slider-thumb:hover {
-  @apply bg-blue-700;
+  @apply opacity-60;
+}
+
+.slider-thumb::-webkit-slider-thumb:active {
+  @apply opacity-100;
 }
