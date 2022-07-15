@@ -19,7 +19,7 @@ module.exports = {
         "price-white": "hsl(0, 0%, 100%)",
         "very-pale-blue": "hsl(230, 100%, 99%)",
         "light-grayish-slider": "hsl(224, 65%, 95%)",
-        "light-grayish-toggle": "hsl(223, 50%, 87%)",
+        "light-grayish-blue": "hsl(223, 50%, 87%)",
         "grayish-blue": "hsl(225, 20%, 60%)",
         "dark-desaturated-blue": "hsl(227, 35%, 25%)",
       },

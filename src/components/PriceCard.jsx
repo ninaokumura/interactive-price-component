@@ -3,6 +3,7 @@ import Slider from "./Slider";
 
 import Button from "./Button";
 import CardFooter from "./CardFooter";
+import Toggle from "./Toggle";
 
 const PLANS = [
   {
@@ -56,7 +57,7 @@ export default function PriceCard() {
         </div>
         <div className="flex gap-4 text-xs text-grayish-blue font-bold">
           <span className="">Monthly Billing</span>
-          <button>toggle</button>
+          <Toggle />
           <div className="flex gap-1">
             <span>Yearly Billing</span>
             <span className="bg-light-grayish-red rounded-full text-red-500">
