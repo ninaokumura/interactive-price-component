@@ -11,7 +11,7 @@ function App() {
           <h1 className="text-xl font-bold text-dark-desaturated-blue tracking-wide">
             Simple, traffic-based pricing
           </h1>
-          <div className="px-[87px]">
+          <div className="px-[70px] sm:px-0">
             <p className="text-sm">
               Sign-up for our 30-day trial. No credit card required.
             </p>

@@ -42,7 +42,7 @@ export default function PriceCard() {
   const price = PLANS[selectedPlan].price;
 
   return (
-    <div className="bg-price-white rounded z-10 divide-y mt-44">
+    <div className="bg-price-white rounded z-10 divide-y mt-44 sm:mt-8 sm:m-auto">
       <div className="p-7 flex flex-col gap-8">
         <div className="grid gap-5 sm:grid-cols-2 sm:gap-8">
           <h1 className="text-grayish-blue text-sm text-center py-4 font-sans font-semibold tracking-wider sm:mt-3 sm:text-left">
