@@ -35,7 +35,12 @@ const PLANS = [
 ];
 
 export default function PriceCard() {
+  const [isChecked, setIsChecked] = useState(false);
+
   const [selectedPlan, setSelectedPlan] = useState(0);
+
+  const price = PLANS[selectedPlan].price;
+
   return (
     <div className="bg-price-white rounded z-10 divide-y mt-44">
       <div className="p-7 flex flex-col gap-8">
@@ -54,18 +59,23 @@ export default function PriceCard() {
           </div>
           <div className="text-center text-dark-desaturated-blue flex justify-center items-center  gap-1 font-bold pt-3">
             <span className="text-3xl sm:text-4xl">
-              ${PLANS[selectedPlan].price}.00
+              {isChecked ? `$${price * 0.75}.00 ` : `$${price}.00`}
             </span>
             <span className="text-grayish-blue text-sm">/month</span>
           </div>
         </div>
         <div className="flex gap-3 text-xs text-grayish-blue font-bold items-center justify-center">
           <span className="">Monthly Billing</span>
-          <Toggle />
+          <Toggle
+            checked={isChecked}
+            onClick={() => setIsChecked(!isChecked)}
+          />
           <div className="flex items-center gap-1">
             <span>Yearly Billing</span>
             <span className="bg-light-grayish-red rounded-full text-[9px] text-light-red py-0.5 sm:py-1 px-2 sm:px-5">
-              -25%
+              <span className="sm:hidden">-</span>
+              25%
+              <span className="hidden sm:inline"> discount</span>
             </span>
           </div>
         </div>
