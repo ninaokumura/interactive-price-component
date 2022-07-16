@@ -14,7 +14,7 @@ export default function CardFooter() {
         {PLAN_DETAILS.map(plan => (
           <li
             key={plan}
-            className="flex justify-center items-center gap-2 font-sans text-sm text-grayish-blue font-semibold py-1"
+            className="flex justify-center items-center gap-2 font-sans text-xs text-grayish-blue font-semibold py-1 sm:justify-start"
           >
             <div>
               <CheckIcon />

@@ -37,36 +37,40 @@ const PLANS = [
 export default function PriceCard() {
   const [selectedPlan, setSelectedPlan] = useState(0);
   return (
-    <div className="bg-price-white rounded z-10 divide-y">
+    <div className="bg-price-white rounded z-10 divide-y mt-44">
       <div className="p-7 flex flex-col gap-8">
-        <h1 className="text-grayish-blue text-sm text-center py-4 font-sans font-semibold tracking-wider">
-          {PLANS[selectedPlan].pageviews} PAGEVIEWS
-        </h1>
-        <div className="grid">
-          <Slider
-            min="0"
-            max="4"
-            step="1"
-            value={selectedPlan}
-            onInput={evt => setSelectedPlan(Number(evt.target.value))}
-          />
+        <div className="grid gap-5 sm:grid-cols-2 sm:gap-8">
+          <h1 className="text-grayish-blue text-sm text-center py-4 font-sans font-semibold tracking-wider sm:mt-3 sm:text-left">
+            {PLANS[selectedPlan].pageviews} PAGEVIEWS
+          </h1>
+          <div className="grid sm:order-1 sm:col-span-2">
+            <Slider
+              min="0"
+              max="4"
+              step="1"
+              value={selectedPlan}
+              onInput={evt => setSelectedPlan(Number(evt.target.value))}
+            />
+          </div>
+          <div className="text-center text-dark-desaturated-blue flex justify-center items-center  gap-1 font-bold pt-3">
+            <span className="text-3xl sm:text-4xl">
+              ${PLANS[selectedPlan].price}.00
+            </span>
+            <span className="text-grayish-blue text-sm">/month</span>
+          </div>
         </div>
-        <div className="text-center text-dark-desaturated-blue flex justify-center items-center gap-1 font-bold pt-3">
-          <span className="text-3xl">${PLANS[selectedPlan].price}.00</span>
-          <span className="text-grayish-blue text-sm">/month</span>
-        </div>
-        <div className="flex gap-4 text-xs text-grayish-blue font-bold">
+        <div className="flex gap-3 text-xs text-grayish-blue font-bold items-center justify-center">
           <span className="">Monthly Billing</span>
           <Toggle />
-          <div className="flex gap-1">
+          <div className="flex items-center gap-1">
             <span>Yearly Billing</span>
-            <span className="bg-light-grayish-red rounded-full text-red-500">
+            <span className="bg-light-grayish-red rounded-full text-[9px] text-light-red py-0.5 sm:py-1 px-2 sm:px-5">
               -25%
             </span>
           </div>
         </div>
       </div>
-      <div className="p-7 flex flex-col gap-6">
+      <div className="p-7 flex flex-col gap-6 sm:flex-row">
         <CardFooter />
         <Button action="Start my trial" />
       </div>
