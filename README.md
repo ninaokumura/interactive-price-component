@@ -25,7 +25,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![price-component-desktop](https://user-images.githubusercontent.com/79299205/179741051-21998cfb-64e5-48bf-9a90-1de5c43d3e27.JPG)
+
+![price-component-mobile](https://user-images.githubusercontent.com/79299205/179741431-c70d3ba5-d739-4439-b5b3-80775adae91a.JPG)
+
 
 ## My process
 
