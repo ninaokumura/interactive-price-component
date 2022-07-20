@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        "range-shadow": "0px 8px 6px 0px hsl(174, 77%, 80%)",
+      },
       backgroundImage: {
         circles: "url('./assets/images/pattern-circles.svg')",
         sliderIcon: "url('./assets/images/icon-slider.svg')",

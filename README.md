@@ -29,7 +29,6 @@ Users should be able to:
 
 ![price-component-mobile](https://user-images.githubusercontent.com/79299205/179741431-c70d3ba5-d739-4439-b5b3-80775adae91a.JPG)
 
-
 ## My process
 
 ### Built with
@@ -41,6 +40,7 @@ Users should be able to:
 ### Useful resources
 
 - [Toggle](https://flowbite.com/docs/forms/toggle/)
+- [Range component](https://tailwind-elements.com/docs/standard/forms/range/)
 
 ## Author
 

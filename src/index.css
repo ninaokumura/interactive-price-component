@@ -7,7 +7,7 @@
 }
 
 .slider-thumb::-webkit-slider-thumb:hover {
-  @apply opacity-60;
+  @apply opacity-60 shadow-range-shadow;
 }
 
 .slider-thumb::-webkit-slider-thumb:active {
